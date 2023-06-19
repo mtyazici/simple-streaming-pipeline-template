@@ -35,4 +35,3 @@ public class SimplePipeline {
         hz.getJet().newJob(pipeline, config);
     }
 }
-

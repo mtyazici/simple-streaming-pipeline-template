@@ -30,7 +30,7 @@ public class SimplePipeline {
                         AbstractMap.SimpleEntry::getValue));
         HazelcastInstance hz = Hazelcast.bootstrappedInstance();
         JobConfig config = new JobConfig();
-	// optionally set the name of the job
+	    // optionally set the name of the job
         config.setName("{{ .pipelineName}}");
         hz.getJet().newJob(pipeline, config);
     }

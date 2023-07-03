@@ -13,7 +13,7 @@ import java.util.AbstractMap;
 
 public class SimplePipeline {
     public static void main(String[] args) {
-        final String mapName = (args.length > 0)? args[0] : "{{ .mapName}}";
+        final String mapName = (args.length > 0)? args[0] : "{{ .MapName}}";
         // Create a pipeline that creates one item per second
         // and writes it to a map with the name given as an argument or my-map.
         Pipeline pipeline = Pipeline.create();
@@ -31,7 +31,7 @@ public class SimplePipeline {
         HazelcastInstance hz = Hazelcast.bootstrappedInstance();
         JobConfig config = new JobConfig();
         // optionally set the name of the job
-        config.setName("{{ .pipelineName}}");
+        config.setName("{{ .PipelineName}}");
         hz.getJet().newJob(pipeline, config);
     }
 }

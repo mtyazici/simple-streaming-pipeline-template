@@ -1,4 +1,4 @@
 group: org.example
 version: 1.0-SNAPSHOT
-mapName: my-map
-pipelineName: simple-pipeline
+mapname: my-map
+pipelinename: simple-pipeline
